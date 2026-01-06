@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kanthies | Organic Candles & Skincare</title>
 
 <style>
@@ -57,10 +57,6 @@ h2 {
   margin-bottom: 25px;
 }
 
-ul {
-  padding-left: 20px;
-}
-
 /* PRODUCTS */
 .products {
   display: grid;
@@ -88,8 +84,8 @@ button {
   border: none;
   padding: 14px 30px;
   border-radius: 30px;
-  cursor: pointer;
   font-size: 15px;
+  cursor: pointer;
 }
 
 /* FOOTER */
@@ -114,51 +110,18 @@ footer {
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* ================= MOBILE OPTIMIZATION ================= */
+/* MOBILE OPTIMIZATION */
 @media (max-width: 768px) {
-
-  header {
-    padding: 50px 15px;
+  header h1 {
+    font-size: 36px;
   }
 
   .logo {
     width: 120px;
   }
 
-  header h1 {
-    font-size: 36px;
-  }
-
-  header p {
-    font-size: 14px;
-  }
-
-  nav a {
-    display: inline-block;
-    margin: 6px 10px;
-    font-size: 14px;
-  }
-
-  section {
-    padding: 50px 15px;
-  }
-
-  h2 {
-    font-size: 26px;
-  }
-
   .products {
     grid-template-columns: 1fr;
-  }
-
-  button {
-    padding: 12px 26px;
-    font-size: 14px;
-  }
-
-  .whatsapp-float {
-    padding: 12px 16px;
-    font-size: 14px;
   }
 }
 </style>
@@ -180,13 +143,14 @@ footer {
 <section id="about">
   <h2>Why Kanthies?</h2>
   <p>
-    Kanthies creates handmade candles, soaps, scrubs and natural perfumes using
-    gentle, skin-safe and eco-friendly ingredients.
+    Kanthies creates handmade candles, soaps, scrubs, face care and natural perfumes
+    using gentle, skin-safe and eco-friendly ingredients.
   </p>
 </section>
 
 <section id="products">
   <h2>Our Products</h2>
+
   <div class="products">
 
     <div class="card">
@@ -208,9 +172,15 @@ footer {
     </div>
 
     <div class="card">
+      <img src="facewash.jpg" alt="Organic Face Wash">
+      <h3>Organic Face Wash</h3>
+      <p>Aloe, glycerin & mild plant-based cleansers.</p>
+    </div>
+
+    <div class="card">
       <img src="perfume.jpg" alt="Natural Perfume">
       <h3>Natural Perfumes</h3>
-      <p>Sandalwood, Lavender & Jasmine blends.</p>
+      <p>Sandalwood, Lavender, Jasmine & Cinnamon blends.</p>
     </div>
 
   </div>
@@ -220,4 +190,18 @@ footer {
   <h2>Contact Us</h2>
   <p>Email: kanthies@gmail.com</p>
   <p>Instagram: @kanthies_naturals</p>
-  <a href="https://wa.me/919074339203?text=Hi
+  <a href="https://wa.me/919074339203" target="_blank">
+    <button>Order on WhatsApp</button>
+  </a>
+</section>
+
+<footer>
+  <p>© 2026 Kanthies. Handmade with care.</p>
+</footer>
+
+<a href="https://wa.me/919074339203" class="whatsapp-float" target="_blank">
+  WhatsApp
+</a>
+
+</body>
+</html>
