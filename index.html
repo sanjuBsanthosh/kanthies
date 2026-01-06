@@ -12,6 +12,8 @@ body {
   background: #faf9f6;
   color: #333;
 }
+
+/* HEADER */
 header {
   background: #2f5d50;
   color: white;
@@ -19,8 +21,13 @@ header {
   text-align: center;
 }
 
+.logo {
+  width: 150px;
+  margin-bottom: 12px;
+}
+
 header h1 {
-  font-size: 48px;      /* Bigger title */
+  font-size: 48px;
   margin-bottom: 10px;
   letter-spacing: 3px;
   font-weight: 700;
@@ -39,10 +46,7 @@ nav a {
   font-weight: 600;
 }
 
-
-
-
-
+/* SECTIONS */
 section {
   padding: 60px 20px;
   max-width: 1100px;
@@ -60,6 +64,7 @@ ul {
   padding-left: 20px;
 }
 
+/* PRODUCTS */
 .products {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -72,15 +77,26 @@ ul {
   padding: 25px;
   border-radius: 16px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}
-
-footer {
-  background: #2f5d50;
-  color: white;
   text-align: center;
-  padding: 30px 20px;
 }
 
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  color: #2f5d50;
+  margin-bottom: 6px;
+}
+
+.card p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* BUTTON */
 button {
   background: #2f5d50;
   color: white;
@@ -90,26 +106,27 @@ button {
   cursor: pointer;
   font-size: 15px;
 }
-  /* Title background box */
-.title-box {
-  display: inline-block;
-  padding: 24px 70px;
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 16px;
-  margin-bottom: 25px;
-  transition: all 0.3s ease;
+
+/* FOOTER */
+footer {
+  background: #2f5d50;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
 }
 
-/* Hover effect */
-.title-box:hover {
-  background: rgba(255, 255, 255, 0.18);
-  transform: scale(1.04);
+/* WHATSAPP FLOAT */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 14px 18px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
 }
-.logo {
-  width: 150px;
-  margin-bottom: 10px;
-}
-
 </style>
 </head>
 
@@ -117,7 +134,6 @@ button {
 
 <header>
   <img src="logo.png" alt="Kanthies Logo" class="logo">
-
   <h1>Kanthies</h1>
   <p>Organic Candles • Handmade Soaps • Natural Skincare</p>
 
@@ -128,18 +144,10 @@ button {
   </nav>
 </header>
 
-
-
-
-
 <section id="about">
   <h2>Why Kanthies?</h2>
-  <p>
-    Kanthies was born from a simple belief — what we use on our skin and in our homes should be gentle, safe, and thoughtfully made.
-  </p>
-  <p>
-    We handcraft scented candles, hot process soaps, and natural body care products in small batches.
-  </p>
+  <p>Kanthies was born from a simple belief — what we use on our skin and in our homes should be gentle, safe, and thoughtfully made.</p>
+  <p>We handcraft scented candles, hot process soaps, and natural body care products in small batches.</p>
   <ul>
     <li>🌿 Naturally derived ingredients</li>
     <li>👐 Handmade in small batches</li>
@@ -147,66 +155,57 @@ button {
     <li>💚 Crafted with care at home</li>
   </ul>
 </section>
+
 <section id="ingredients">
   <h2>Our Ingredient Promise</h2>
-  <p>
-    At Kanthies, we believe transparency matters. Every ingredient we choose
-    is selected with care, keeping skin safety, simplicity, and nature in mind.
-  </p>
   <ul>
     <li>🌿 Plant-based & naturally derived ingredients</li>
-    <li>🚫 No harsh detergents or unnecessary additives</li>
-    <li>🧪 Skin-safe formulations, tested in small batches</li>
-    <li>♻️ Eco-conscious approach wherever possible</li>
+    <li>🚫 No harsh detergents</li>
+    <li>🧪 Skin-safe small batches</li>
+    <li>♻️ Eco-conscious approach</li>
     <li>🐰 No animal testing</li>
   </ul>
-  <p>
-    Because your skin and home deserve gentle care — not compromises.
-  </p>
 </section>
 
 <section id="products">
   <h2>Our Products</h2>
 
   <div class="products">
-
     <div class="card">
-      <img src="candel.jpg" alt="Kanthies Scented Candles" style="width:100%;border-radius:10px;">
+      <img src="candel.jpg" alt="Scented Candles">
       <h3>Scented Candles</h3>
       <p>Soy & beeswax candles infused with essential oils.</p>
     </div>
 
     <div class="card">
-      <img src="soap.jpg" alt="Kanthies Handmade Soap" style="width:100%;border-radius:10px;">
+      <img src="soap.jpg" alt="Handmade Soap">
       <h3>Hot Process Soaps</h3>
-      <p>Cold-pressed oils, herbal infusions, and skin-safe lye.</p>
+      <p>Cold-pressed oils & herbal infusions.</p>
     </div>
 
     <div class="card">
-      <img src="scrub.jpg" alt="Kanthies Natural Scrub" style="width:100%;border-radius:10px;">
+      <img src="scrub.jpg" alt="Natural Scrub">
       <h3>Natural Scrubs</h3>
-      <p>Coffee, sugar, oats & botanical blends.</p>
+      <p>Coffee, sugar, oats & botanicals.</p>
     </div>
 
     <div class="card">
-      <img src="Face Wash.jpg" alt="Kanthies Organic Face Wash" style="width:100%;border-radius:10px;">
+      <img src="Face Wash.jpg" alt="Face Wash">
       <h3>Organic Face Wash</h3>
-      <p>Aloe, glycerin & mild plant-based cleansers.</p>
+      <p>Aloe, glycerin & mild cleansers.</p>
     </div>
 
     <div class="card">
-      <img src="perfume.jpg" alt="Kanthies Natural Perfume" style="width:100%;border-radius:10px;">
+      <img src="perfume.jpg" alt="Perfume">
       <h3>Natural Perfumes</h3>
-      <p>Sandalwood, Lavender, Peppermint, Kasturi Jasmine & Cinnamon blends.</p>
+      <p>Sandalwood, Lavender & botanical blends.</p>
     </div>
-
   </div>
 </section>
 
 <section id="contact">
   <h2>Contact Us</h2>
   <p>Email: kanthies@gmail.com</p>
-  <p>Instagram: @kanthies_naturals</p>
   <a href="https://wa.me/919074339203" target="_blank">
     <button>Order Now on WhatsApp</button>
   </a>
@@ -216,9 +215,8 @@ button {
   <p>© 2026 Kanthies. Handmade with care.</p>
 </footer>
 
-<a href="https://wa.me/919074339203" target="_blank"
-style="position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:14px 18px;border-radius:50px;font-weight:bold;text-decoration:none;">
-WhatsApp
+<a href="https://wa.me/919074339203" class="whatsapp-float" target="_blank">
+  WhatsApp
 </a>
 
 </body>
